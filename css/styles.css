@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Righteous-Regular;
+    src: url('../fonts/Righteous-Regular.ttf');
+}
+
+:root {
+    --own-yellow: #f4fc00;
+    --own-red: #ff3c31;
+    --own-blue: #00fdfd;
+    --own-pink: #ff27ff;
+    --own-green: #00ff36;
+    --own-orange: #ffa500;
+    --own-morado: #d492da;
+    --card-app: #261c3e;
+}
+
+body {
+    background-color: #202124;
+    padding: 2em;
+    font-family: "Righteous-Regular", sans-serif;
+}
+
+div.logo {
+    font-size: 5em;
+    color: var(--own-morado);
+    font-weight: 100;
+    /*color: var(--own-red);*/
+}
+
+div.logo>strong {
+    font-weight: 900;
+}
+
+p.subtitle {
+    font-size: 1.1em;
+    color: var(--own-pink);
+}
+
+header>nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.grid-apps {
+    display: flex;
+    margin-top: 3em;
+    justify-content: start;
+    flex-flow: row;
+}
+
+.grid-apps>.item {
+    border: 0.3em solid var(--own-red);
+    border-radius: 1.3em;
+    padding: 1.5em;
+    margin-right: 2em;
+}
+
+.grid-apps>.item:hover {
+    background-color: var(--own-red);
+    cursor: pointer;
+    transition: all ease-in-out;
+    transition-duration: 100ms;
+}
+
+.grid-apps>.item:nth-child(1):hover>.line {
+    background-color: white;
+}
+
+.grid-apps>.item>span {
+    font-size: 1.4em;
+    margin-bottom: 0.2em;
+    color: white;
+}
+
+.grid-apps>.item>.line {
+    background-color: var(--own-red);
+    width: 100%;
+    height: 0.2em;
+    margin-top: 0.6em;
+    border-radius: 0.6em;
+}
+
+.grid-apps>.item>.group {
+    display: flex;
+    flex-flow: row;
+}
+
+.grid-apps>.item>.group>img {
+    border-radius: 50%;
+    width: 6em;
+    height: 6em;
+    align-self: center;
+}
+
+.grid-apps>.item>.group>.descripcion {
+    max-width: 10em;
+    color: white;
+    font-size: 1em;
+    font-weight: 100;
+}
+
+.grid-apps>.item>.tiendas>img {
+    width: 10em;
+    padding: 0dp;
+    height: auto;
+}
+
+.menu>i {
+    padding: .4em;
+    color: var(--own-morado);
+    font-size: 2.5em;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.aside-menu {
+    position: fixed;
+    right: 0;
+    z-index: 10;
+    height: 100vh;
+    background-color: var(--own-orange);
+    width: 50%;
+    top: 0;
+    right: 0;
+    padding-left: 2em;
+}
+
+.aside-menu>ul {
+    height: 100%;
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.aside-menu>ul>li {
+    font-size: 5em;
+}
+
+.aside-menu>ul>li:hover {
+    cursor: pointer;
+}
+
+.close-aside>i {
+    padding: .4em;
+    color: #202124;
+    font-size: 2.5em;
+}
+
+.close-aside {
+    position: absolute;
+    right: 2em;
+    top: 2em;
+}
+
+.close-aside:hover {
+    cursor: pointer;
+}
+
+.close-aside-event {
+    width: 0px;
+    padding: 0px;
+}
+
+.show-aside-event {
+    width: 50%;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    padding-bottom: 0.3em;
+    color: white;
+    max-width: 40em;
+    padding-right: 1.4em;
+}
+
+footer > .footer > p{
+    font-size: 0.8em;
+}
